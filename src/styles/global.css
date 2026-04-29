@@ -1,1 +1,33 @@
 @import "tailwindcss";
+
+@plugin '@tailwindcss/typography';
+@plugin '@tailwindcss/forms';
+@import "tailwindcss-animated";
+@import "tailwindcss-intersect";
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #661428;
+  --color-secondary: #e0998b;
+
+  --color-cta: #fff0b8;
+  --color-cta-hover: #fff7dc;
+
+  --color-accent-beige: #f5f1e8;
+  --color-accent-green: #6b705c;
+
+  --color-neutral-black: #000000;
+  --color-neutral-white: #ffffff;
+
+  --font-barlow: "Barlow", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+}
+
+@layer base {
+}
+
+@layer components {
+}
+@layer utilities {
+}
