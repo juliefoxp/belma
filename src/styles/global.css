@@ -2,12 +2,12 @@
 
 @plugin '@tailwindcss/typography';
 @plugin '@tailwindcss/forms';
+
 @import "tailwindcss-animated";
 @import "tailwindcss-intersect";
 
-@import "tailwindcss";
-
 @theme {
+  /* Colors */
   --color-primary: #661428;
   --color-secondary: #e0998b;
 
@@ -20,16 +20,27 @@
   --color-neutral-black: #000000;
   --color-neutral-white: #ffffff;
 
-  --font-Abril Fatface: "Abril Fatface", serif;
-  --font-Space Grotesk: "Space Grotesk", sans-serif;
-   --font-Outfit: "Outfit", sans-serif;
-  --font-Special Elite: "Special Elite", system-ui;
+  /* Fonts */
+  --font-abril: "Abril Fatface", serif;
+  --font-space: "Space Grotesk", sans-serif;
+  --font-outfit: "Outfit", sans-serif;
+  --font-special: "Special Elite", system-ui;
 }
 
 @layer base {
+  body {
+    @apply font-outfit text-neutral-black bg-white;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-abril;
+  }
 }
 
 @layer components {
 }
+
 @layer utilities {
 }
