@@ -20,8 +20,10 @@
   --color-neutral-black: #000000;
   --color-neutral-white: #ffffff;
 
-  --font-barlow: "Barlow", sans-serif;
-  --font-roboto: "Roboto", sans-serif;
+  --font-Abril Fatface: "Abril Fatface", serif;
+  --font-Space Grotesk: "Space Grotesk", sans-serif;
+   --font-Outfit: "Outfit", sans-serif;
+  --font-Special Elite: "Special Elite", system-ui;
 }
 
 @layer base {
