@@ -1,6 +1,9 @@
 {
   "name": "",
   "type": "module",
+  "overrides": {
+    "vite": "^7"
+  },
   "version": "0.0.1",
   "engines": {
     "node": ">=22.12.0"
