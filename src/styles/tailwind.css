@@ -1,11 +1,5 @@
 @import "tailwindcss";
 
-@plugin '@tailwindcss/typography';
-@plugin '@tailwindcss/forms';
-
-@import "tailwindcss-animated";
-@import "tailwindcss-intersect";
-
 @theme {
   /* Colors */
   --color-primary: #661428;
@@ -29,13 +23,7 @@
 
 @layer base {
   body {
-    @apply font-outfit text-neutral-black bg-white;
-  }
-
-  h1,
-  h2,
-  h3 {
-    @apply font-abril;
+    @apply font-outfit text-neutral-black;
   }
 }
 
