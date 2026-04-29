@@ -1,0 +1,45 @@
+---
+// Tailwind styling for overskrifter / labels / grafik tekst
+const sizeClasses = {
+  h1: "text-[32px] md:text-[42px] lg:text-[48px] font-abril",
+  h2: "text-[24px] md:text-[28px] lg:text-[32px] font-space",
+  h3: "text-[20px] md:text-[22px] lg:text-[24px] font-space",
+
+  labelLarge: "text-[22px] md:text-[26px] lg:text-[30px] font-abril",
+
+  graphic: "text-[16px] md:text-[17px] lg:text-[18px] font-special",
+};
+
+interface Props { type?: keyof typeof sizeClasses; stylingclasses?: string }
+const { type = "h1", stylingclasses = "" } = Astro.props as Props;
+---
+
+{type === "h1" && (
+  <h1 class={`${sizeClasses[type]} ${stylingclasses}`}>
+    <slot />
+  </h1>
+)}
+
+{type === "h2" && (
+  <h2 class={`${sizeClasses[type]} ${stylingclasses}`}>
+    <slot />
+  </h2>
+)}
+
+{type === "h3" && (
+  <h3 class={`${sizeClasses[type]} ${stylingclasses}`}>
+    <slot />
+  </h3>
+)}
+
+{type === "labelLarge" && (
+  <p class={`${sizeClasses[type]} ${stylingclasses}`}>
+    <slot />
+  </p>
+)}
+
+{type === "graphic" && (
+  <span class={`${sizeClasses[type]} ${stylingclasses}`}>
+    <slot />
+  </span>
+)}
